@@ -63,7 +63,7 @@ source ~/.bashrc
 ```
 <hr>
 
-### 5. Download & build binary
+### 4. Download & build binary
 ```
 git clone https://github.com/0glabs/0g-da-node.git
 cd 0g-da-node
@@ -74,20 +74,20 @@ cargo build --release
 ```
 <hr>
 
-### 6. Download params
+### 5. Download params
 ```
 ./dev_support/download_params.sh
 ```
 <hr>
 
-### 7. Generate BLS private key
+### 6. Generate BLS private key
 ```
 cargo run --bin key-gen
 ```
 ### Save Your BLS Key: 185656xxxxxxx
 <hr>
 
-### 8. Configuration
+### 7. Configuration
 ```
 nano $HOME/0g-da-node/config.toml
 ```
@@ -116,7 +116,7 @@ enable_das = "true"
 • miner_eth_private_key = 4534xxxxxx (PK New Wallet)
 <hr>
 
-### 7. Create service
+### 8. Create service
 ```
 sudo tee /etc/systemd/system/0gda.service > /dev/null <<EOF
 [Unit]
@@ -148,7 +148,7 @@ https://0g.exploreme.pro/validators/
 ### ✅ DONE, you can start Node
 <hr>
 
-### 8. Start node
+### 9. Start node
 ```
 sudo systemctl daemon-reload && \
 sudo systemctl enable 0gda && \
@@ -157,7 +157,7 @@ sudo systemctl status 0gda
 ```
 <hr>
 
-### 9. Check Logs
+### 10. Check Logs
 ```
 sudo journalctl -u 0gda -f -o cat
 ```
@@ -167,7 +167,7 @@ sudo journalctl -u 0gda -f -o cat
 ![Screenshot 2025-03-27 092503](https://github.com/user-attachments/assets/d93837a2-4822-4429-be46-e21cc14dc293)
 <hr>
 
-### 10. If Node ended you can delete node use command
+### 11. IF NODE ENDED YOU CAN DELETE NODE USE COMMAND
 ```
 sudo systemctl stop 0gda
 sudo systemctl disable 0gda

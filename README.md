@@ -36,18 +36,24 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 source "$HOME/.cargo/env"
 rustc --version
 ```
-### then
+<hr>
+
 ```
 curl -L https://risczero.com/install | bash
 source "$HOME/.cargo/env"
 ```
-### then
+<hr>
+
 ```
 source "/root/.bashrc"
 ```
 <hr>
 
-### 4. Install Rzup
+```
+rzup install
+```
+<hr>
+
 ```
 export PATH="$HOME/.cargo/bin:$PATH"
 source "$HOME/.cargo/env"
